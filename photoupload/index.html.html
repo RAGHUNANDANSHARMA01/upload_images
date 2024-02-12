@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload images before crop</title>
+    <link rel="stylesheet" href="imagesupload.css">
+</head>
+<body>
+    <center><h1><b>Add Image / Icon</b></h1></center>
+    <div class="container">
+        <div>
+            <p>Upload Images</p>
+        </div>
+        <input type="file" id="file-input" accept="image/png, image/jpeg" onchange="preview()" multiple>
+        <label for="file-input">
+            <i class="fas fa-upload"></i> &nbsp; Choose from Device
+        </label>
+        <p id="num-of-files">No Files Chosen</p>
+        <div id="images"></div>
+    </div>
+    <script src="imagesupload.js"></script>
+</body>
+</html>
